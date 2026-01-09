@@ -19,6 +19,9 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">JENY SAM</a>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -89,7 +92,7 @@
             <div class="skill-card">
                 <i class="fa-brands fa-python"></i>
                 <h3>Python</h3>
-                <p>Obspy, Pandas, NumPy</p>
+                <p>Numpy, Matplotlib</p>
             </div>
             <div class="skill-card">
                 <i class="fa-solid fa-code"></i>
@@ -176,11 +179,38 @@
                 <a href="https://www.linkedin.com/in/jeny-sam-7154853a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     class="social-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                 <a href="tel:8111835268" class="social-btn"><i class="fa-solid fa-phone"></i> Mobile</a>
-            </div>
+                <!--             </div>
             <p class="copyright">© 2026 Jeny Sam. Built for Science.</p>
-        </div>
+        </div> -->
     </footer>
 
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            // Toggle icon between bars and times (X)
+            const icon = hamburger.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+    </script>
 </body>
 
 </html>
