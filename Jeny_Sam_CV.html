@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeny Sam - CV</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0a192f;
+            --accent: #2e60a3;
+            /* Professional Blue for print */
+            --text: #333;
+            --text-light: #666;
+            --bg: #fff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            background-color: #555;
+            /* Dark background for screen viewing */
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .page {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 40px 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* Center align items vertically */
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary);
+        }
+
+        .header-left h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 36px;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .header-left p {
+            font-size: 14px;
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .contact-details {
+            text-align: right;
+            font-size: 13px;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .contact-details i {
+            color: var(--accent);
+            width: 15px;
+            text-align: center;
+            margin-right: 5px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 25px;
+        }
+
+        /* ... existing CSS ... */
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+        <header>
+            <div class="header-content">
+                <img src="assets/Jenyphoto.jpg" alt="Jeny Sam" class="header-photo">
+                <div class="header-left">
+                    <h1>Jeny Sam</h1>
+                    <p>M.Sc. Marine Geophysics Student</p>
+                </div>
+            </div>
+            <div class="contact-details">
+                <div><a style="text-decoration:none; color:inherit;"
+                        href="mailto:jenysam22@gmail.com">jenysam22@gmail.com</a> <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>8111835268 <i class="fa-solid fa-phone"></i></div>
+                <div>Cochin, India <i class="fa-solid fa-location-dot"></i></div>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">Professional Profile</h2>
+            <p class="profile-text">
+                Ambitious M.Sc. Marine Geophysics student with a strong foundation in Physics. Passionate about
+                understanding Earth's deep processes through Geomagnetism and Solid Earth dynamics. Seeking to leverage
+                computational skills in Python, MATLAB, and GMT to contribute to high-impact research at premier
+                institutes like IIG Mumbai.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">M.Sc. Marine Geophysics</span>
+                    <span class="item-date">2025 - Present</span>
+                </div>
+                <div class="item-subtitle">Cochin University of Science and Technology (CUSAT)</div>
+                <!-- <ul style="font-size:12px; padding-left:20px; color:#555;">
+                    <li>Focus: Marine Geology, Potential Fields, Seismology</li>
+                </ul> -->
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">B.Sc. Physics</span>
+                    <span class="item-date">2021 - 2024</span>
+                </div>
+                <div class="item-subtitle">Assumption College (Autonomous)</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><strong>Languages:</strong> Python, C++, MATLAB, R</div>
+                <div class="skill-item"><strong>Tools:</strong> GMT, QGIS, ArcGIS</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="grid-container">
+                <div class="research-item">
+                    <h4>Geomagnetism</h4>
+                    <p>Analysis of secular variations and understanding crust-core magnetic interactions.</p>
+                </div>
+                <div class="research-item">
+                    <h4>Marine Geophysics</h4>
+                    <p>Morphological studies of ocean floor and sedimentary basin analysis.</p>
+                </div>
+                <div class="research-item">
+                    <h4>Solid Earth Processes</h4>
+                    <p>Computational modeling of geodynamic processes.</p>
+                </div>
+                <div class="research-item">
+                    <h4>Seismology</h4>
+                    <p>Earthquake data processing and source mechanism studies.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <h2 class="section-title">Languages</h2>
+            <p style="font-size:13px;">English, Malayalam (Native), Hindi, French (Basic)</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
